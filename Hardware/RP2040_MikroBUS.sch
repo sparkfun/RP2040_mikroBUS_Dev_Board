@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -13038,6 +13038,11 @@ but can fall back to SPI1</text>
 <wire x1="368.3" y1="81.28" x2="365.76" y2="81.28" width="0.1524" layer="91" style="longdash"/>
 <label x="365.76" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$43" gate="J1" pin="PWM"/>
+<wire x1="172.72" y1="30.48" x2="177.8" y2="30.48" width="0.1524" layer="91"/>
+<label x="177.8" y="30.48" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO17" class="0">
 <segment>
@@ -13049,6 +13054,11 @@ but can fall back to SPI1</text>
 <pinref part="J8" gate="G$1" pin="5"/>
 <wire x1="368.3" y1="78.74" x2="365.76" y2="78.74" width="0.1524" layer="91" style="longdash"/>
 <label x="365.76" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$43" gate="J1" pin="INT"/>
+<wire x1="172.72" y1="27.94" x2="177.8" y2="27.94" width="0.1524" layer="91"/>
+<label x="177.8" y="27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO18" class="0">
@@ -13199,25 +13209,16 @@ but can fall back to SPI1</text>
 <pinref part="S3" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="SPI0_CS" class="0">
+<segment>
+<pinref part="U5" gate="U1" pin="GPIO5"/>
+<wire x1="93.98" y1="147.32" x2="96.52" y2="147.32" width="0.1524" layer="91"/>
+<label x="96.52" y="147.32" size="1.27" layer="95" xref="yes"/>
+</segment>
 <segment>
 <pinref part="U$43" gate="J1" pin="CS"/>
 <wire x1="142.24" y1="25.4" x2="137.16" y2="25.4" width="0.1524" layer="91"/>
 <label x="137.16" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="U$43" gate="J1" pin="PWM"/>
-<wire x1="172.72" y1="30.48" x2="177.8" y2="30.48" width="0.1524" layer="91"/>
-<label x="177.8" y="30.48" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="U$43" gate="J1" pin="INT"/>
-<wire x1="172.72" y1="27.94" x2="177.8" y2="27.94" width="0.1524" layer="91"/>
-<label x="177.8" y="27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
