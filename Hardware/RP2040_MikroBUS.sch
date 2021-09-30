@@ -12736,6 +12736,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="V_BATT" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
+<symbol name="1.1V">
+<description>&lt;h3&gt;1.1V Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="1.1V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -12784,6 +12791,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Generic symbol for the battery input to a system.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="V_BATT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1.1V" prefix="SUPPLY">
+<description>&lt;h3&gt;1.1V Supply Symbol&lt;/h3&gt;
+&lt;p&gt;Power supply symbol for a specifically-stated 1.1V source.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="1.1V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -13815,370 +13836,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technologies>
 </device>
 <device name="TIGHT" package="STAND-OFF-TIGHT">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="RP2040">
-<packages>
-<package name="QFN-56">
-<wire x1="3.1" y1="-3.5" x2="3.5" y2="-3.5" width="0.1524" layer="21"/>
-<wire x1="3.5" y1="-3.1" x2="3.5" y2="-3.5" width="0.1524" layer="21"/>
-<wire x1="-3.1" y1="-3.5" x2="-3.5" y2="-3.5" width="0.1524" layer="21"/>
-<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="-3.1" width="0.1524" layer="21"/>
-<wire x1="3.5" y1="3.1" x2="3.5" y2="3.5" width="0.1524" layer="21"/>
-<wire x1="3.5" y1="3.5" x2="3.1" y2="3.5" width="0.1524" layer="21"/>
-<wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.02" layer="51"/>
-<wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.02" layer="51"/>
-<wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.02" layer="51"/>
-<wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.02" layer="51"/>
-<smd name="1" x="-3.4365" y="2.6" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="2" x="-3.4365" y="2.2" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="3" x="-3.4365" y="1.8" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="4" x="-3.4365" y="1.4" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="5" x="-3.4365" y="1" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="6" x="-3.4365" y="0.6" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="7" x="-3.4365" y="0.2" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<text x="0" y="2.159" size="0.6096" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="-2.3" size="0.6096" layer="27" align="center">&gt;VALUE</text>
-<smd name="EPAD" x="0" y="0" dx="3.2" dy="3.2" layer="1" cream="no"/>
-<rectangle x1="-3.5" y1="0.51" x2="-3.1" y2="0.69" layer="51"/>
-<rectangle x1="-3.5" y1="0.91" x2="-3.1" y2="1.09" layer="51"/>
-<rectangle x1="-3.5" y1="1.31" x2="-3.1" y2="1.49" layer="51"/>
-<rectangle x1="-3.5" y1="1.71" x2="-3.1" y2="1.89" layer="51"/>
-<rectangle x1="-3.5" y1="2.11" x2="-3.1" y2="2.29" layer="51"/>
-<rectangle x1="-3.5" y1="2.51" x2="-3.1" y2="2.69" layer="51"/>
-<rectangle x1="-3.5" y1="0.11" x2="-3.1" y2="0.29" layer="51"/>
-<rectangle x1="-3.5" y1="-0.29" x2="-3.1" y2="-0.11" layer="51"/>
-<smd name="8" x="-3.4365" y="-0.2" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="9" x="-3.4365" y="-0.6" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="10" x="-3.4365" y="-1" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="11" x="-3.4365" y="-1.4" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="12" x="-3.4365" y="-1.8" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="13" x="-3.4365" y="-2.2" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<smd name="14" x="-3.4365" y="-2.6" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<rectangle x1="-3.5" y1="-2.29" x2="-3.1" y2="-2.11" layer="51"/>
-<rectangle x1="-3.5" y1="-1.89" x2="-3.1" y2="-1.71" layer="51"/>
-<rectangle x1="-3.5" y1="-1.49" x2="-3.1" y2="-1.31" layer="51"/>
-<rectangle x1="-3.5" y1="-1.09" x2="-3.1" y2="-0.91" layer="51"/>
-<rectangle x1="-3.5" y1="-0.69" x2="-3.1" y2="-0.51" layer="51"/>
-<rectangle x1="-3.5" y1="-2.69" x2="-3.1" y2="-2.51" layer="51"/>
-<rectangle x1="-3.75" y1="0.1" x2="-3.1" y2="0.3" layer="31"/>
-<rectangle x1="-1.3" y1="0.7" x2="-0.7" y2="1.3" layer="31"/>
-<rectangle x1="-3.75" y1="0.5" x2="-3.1" y2="0.7" layer="31"/>
-<rectangle x1="-3.75" y1="0.9" x2="-3.1" y2="1.1" layer="31"/>
-<rectangle x1="-3.75" y1="1.3" x2="-3.1" y2="1.5" layer="31"/>
-<rectangle x1="-3.75" y1="1.7" x2="-3.1" y2="1.9" layer="31"/>
-<rectangle x1="-3.75" y1="2.1" x2="-3.1" y2="2.3" layer="31"/>
-<rectangle x1="-3.75" y1="2.5" x2="-3.1" y2="2.7" layer="31"/>
-<rectangle x1="-3.75" y1="-2.7" x2="-3.1" y2="-2.5" layer="31"/>
-<rectangle x1="-3.75" y1="-2.3" x2="-3.1" y2="-2.1" layer="31"/>
-<rectangle x1="-3.75" y1="-1.9" x2="-3.1" y2="-1.7" layer="31"/>
-<rectangle x1="-3.75" y1="-1.5" x2="-3.1" y2="-1.3" layer="31"/>
-<rectangle x1="-3.75" y1="-1.1" x2="-3.1" y2="-0.9" layer="31"/>
-<rectangle x1="-3.75" y1="-0.7" x2="-3.1" y2="-0.5" layer="31"/>
-<rectangle x1="-3.75" y1="-0.3" x2="-3.1" y2="-0.1" layer="31"/>
-<circle x="-3.937" y="3.175" radius="0.05" width="0.254" layer="21"/>
-<wire x1="-3.1" y1="3.5" x2="-3.5" y2="3.5" width="0.1524" layer="21"/>
-<wire x1="-3.5" y1="3.5" x2="-3.5" y2="3.1" width="0.1524" layer="21"/>
-<smd name="15" x="-2.6" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="16" x="-2.2" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="17" x="-1.8" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="18" x="-1.4" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="19" x="-1" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="20" x="-0.6" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="21" x="-0.2" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<rectangle x1="-0.8" y1="-3.39" x2="-0.4" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="-1.2" y1="-3.39" x2="-0.8" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="-1.6" y1="-3.39" x2="-1.2" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="-2" y1="-3.39" x2="-1.6" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="-2.4" y1="-3.39" x2="-2" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="-2.8" y1="-3.39" x2="-2.4" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="-0.4" y1="-3.39" x2="0" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="0" y1="-3.39" x2="0.4" y2="-3.21" layer="51" rot="R90"/>
-<smd name="22" x="0.2" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="23" x="0.6" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="24" x="1" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="25" x="1.4" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="26" x="1.8" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="27" x="2.2" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<smd name="28" x="2.6" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<rectangle x1="2" y1="-3.39" x2="2.4" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="1.6" y1="-3.39" x2="2" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="1.2" y1="-3.39" x2="1.6" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="0.8" y1="-3.39" x2="1.2" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="0.4" y1="-3.39" x2="0.8" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="2.4" y1="-3.39" x2="2.8" y2="-3.21" layer="51" rot="R90"/>
-<rectangle x1="-0.525" y1="-3.525" x2="0.125" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="-0.925" y1="-3.525" x2="-0.275" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="-1.325" y1="-3.525" x2="-0.675" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="-1.725" y1="-3.525" x2="-1.075" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="-2.125" y1="-3.525" x2="-1.475" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="-2.525" y1="-3.525" x2="-1.875" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="-2.925" y1="-3.525" x2="-2.275" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="2.275" y1="-3.525" x2="2.925" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="1.875" y1="-3.525" x2="2.525" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="1.475" y1="-3.525" x2="2.125" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="1.075" y1="-3.525" x2="1.725" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="0.675" y1="-3.525" x2="1.325" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="0.275" y1="-3.525" x2="0.925" y2="-3.325" layer="31" rot="R90"/>
-<rectangle x1="-0.125" y1="-3.525" x2="0.525" y2="-3.325" layer="31" rot="R90"/>
-<smd name="29" x="3.4365" y="-2.6" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="30" x="3.4365" y="-2.2" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="31" x="3.4365" y="-1.8" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="32" x="3.4365" y="-1.4" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="33" x="3.4365" y="-1" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="34" x="3.4365" y="-0.6" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="35" x="3.4365" y="-0.2" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<rectangle x1="3.1" y1="-0.69" x2="3.5" y2="-0.51" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="-1.09" x2="3.5" y2="-0.91" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="-1.49" x2="3.5" y2="-1.31" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="-1.89" x2="3.5" y2="-1.71" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="-2.29" x2="3.5" y2="-2.11" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="-2.69" x2="3.5" y2="-2.51" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="-0.29" x2="3.5" y2="-0.11" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="0.11" x2="3.5" y2="0.29" layer="51" rot="R180"/>
-<smd name="36" x="3.4365" y="0.2" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="37" x="3.4365" y="0.6" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="38" x="3.4365" y="1" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="39" x="3.4365" y="1.4" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="40" x="3.4365" y="1.8" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="41" x="3.4365" y="2.2" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
-<smd name="42" x="3.4365" y="2.6" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
-<rectangle x1="3.1" y1="2.11" x2="3.5" y2="2.29" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="1.71" x2="3.5" y2="1.89" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="1.31" x2="3.5" y2="1.49" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="0.91" x2="3.5" y2="1.09" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="0.51" x2="3.5" y2="0.69" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="2.51" x2="3.5" y2="2.69" layer="51" rot="R180"/>
-<rectangle x1="3.1" y1="-0.3" x2="3.75" y2="-0.1" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="-0.7" x2="3.75" y2="-0.5" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="-1.1" x2="3.75" y2="-0.9" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="-1.5" x2="3.75" y2="-1.3" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="-1.9" x2="3.75" y2="-1.7" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="-2.3" x2="3.75" y2="-2.1" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="-2.7" x2="3.75" y2="-2.5" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="2.5" x2="3.75" y2="2.7" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="2.1" x2="3.75" y2="2.3" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="1.7" x2="3.75" y2="1.9" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="1.3" x2="3.75" y2="1.5" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="0.9" x2="3.75" y2="1.1" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="0.5" x2="3.75" y2="0.7" layer="31" rot="R180"/>
-<rectangle x1="3.1" y1="0.1" x2="3.75" y2="0.3" layer="31" rot="R180"/>
-<smd name="43" x="2.6" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="44" x="2.2" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="45" x="1.8" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="46" x="1.4" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="47" x="1" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="48" x="0.6" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="49" x="0.2" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<rectangle x1="0.4" y1="3.21" x2="0.8" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="0.8" y1="3.21" x2="1.2" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="1.2" y1="3.21" x2="1.6" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="1.6" y1="3.21" x2="2" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="2" y1="3.21" x2="2.4" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="2.4" y1="3.21" x2="2.8" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="0" y1="3.21" x2="0.4" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="-0.4" y1="3.21" x2="0" y2="3.39" layer="51" rot="R270"/>
-<smd name="50" x="-0.2" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="51" x="-0.6" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="52" x="-1" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="53" x="-1.4" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="54" x="-1.8" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="55" x="-2.2" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
-<smd name="56" x="-2.6" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
-<rectangle x1="-2.4" y1="3.21" x2="-2" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="-2" y1="3.21" x2="-1.6" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="-1.6" y1="3.21" x2="-1.2" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="-1.2" y1="3.21" x2="-0.8" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="-0.8" y1="3.21" x2="-0.4" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="-2.8" y1="3.21" x2="-2.4" y2="3.39" layer="51" rot="R270"/>
-<rectangle x1="-0.125" y1="3.325" x2="0.525" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="0.275" y1="3.325" x2="0.925" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="0.675" y1="3.325" x2="1.325" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="1.075" y1="3.325" x2="1.725" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="1.475" y1="3.325" x2="2.125" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="1.875" y1="3.325" x2="2.525" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="2.275" y1="3.325" x2="2.925" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="-2.925" y1="3.325" x2="-2.275" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="-2.525" y1="3.325" x2="-1.875" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="-2.125" y1="3.325" x2="-1.475" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="-1.725" y1="3.325" x2="-1.075" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="-1.325" y1="3.325" x2="-0.675" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="-0.925" y1="3.325" x2="-0.275" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="-0.525" y1="3.325" x2="0.125" y2="3.525" layer="31" rot="R270"/>
-<rectangle x1="-1.3" y1="-1.3" x2="-0.7" y2="-0.7" layer="31"/>
-<rectangle x1="0.7" y1="-1.3" x2="1.3" y2="-0.7" layer="31"/>
-<rectangle x1="0.7" y1="0.7" x2="1.3" y2="1.3" layer="31"/>
-<rectangle x1="-0.3" y1="-0.3" x2="0.3" y2="0.3" layer="31"/>
-</package>
-</packages>
-<symbols>
-<symbol name="RP2040">
-<wire x1="-15.24" y1="38.1" x2="-15.24" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-40.64" x2="15.24" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-40.64" x2="15.24" y2="38.1" width="0.254" layer="94"/>
-<wire x1="15.24" y1="38.1" x2="-15.24" y2="38.1" width="0.254" layer="94"/>
-<text x="-15.24" y="38.354" size="1.778" layer="95">&gt;NAME</text>
-<text x="-15.24" y="-43.18" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="RUN" x="-17.78" y="17.78" length="short"/>
-<pin name="VDD_1V1" x="-17.78" y="25.4" length="short"/>
-<pin name="TESTEN" x="-17.78" y="-35.56" length="short"/>
-<pin name="USB_D+" x="-17.78" y="12.7" length="short"/>
-<pin name="USB_D-" x="-17.78" y="10.16" length="short"/>
-<pin name="GND" x="-17.78" y="-38.1" length="short"/>
-<pin name="USB_VDD" x="-17.78" y="33.02" length="short"/>
-<pin name="GPIO0" x="17.78" y="35.56" length="short" rot="R180"/>
-<pin name="ADC_VDD" x="-17.78" y="22.86" length="short"/>
-<pin name="SWDIO" x="-17.78" y="-12.7" length="short"/>
-<pin name="SWCLK" x="-17.78" y="-10.16" length="short"/>
-<pin name="VDDIO" x="-17.78" y="35.56" length="short"/>
-<pin name="XIN" x="-17.78" y="2.54" length="short"/>
-<pin name="XOUT" x="-17.78" y="0" length="short"/>
-<pin name="GPIO1" x="17.78" y="33.02" length="short" rot="R180"/>
-<pin name="GPIO2" x="17.78" y="30.48" length="short" rot="R180"/>
-<pin name="GPIO3" x="17.78" y="27.94" length="short" rot="R180"/>
-<pin name="GPIO4" x="17.78" y="25.4" length="short" rot="R180"/>
-<pin name="GPIO5" x="17.78" y="22.86" length="short" rot="R180"/>
-<pin name="GPIO6" x="17.78" y="20.32" length="short" rot="R180"/>
-<pin name="GPIO7" x="17.78" y="17.78" length="short" rot="R180"/>
-<pin name="GPIO8" x="17.78" y="15.24" length="short" rot="R180"/>
-<pin name="GPIO9" x="17.78" y="12.7" length="short" rot="R180"/>
-<pin name="GPIO10" x="17.78" y="10.16" length="short" rot="R180"/>
-<pin name="GPIO11" x="17.78" y="7.62" length="short" rot="R180"/>
-<pin name="GPIO12" x="17.78" y="5.08" length="short" rot="R180"/>
-<pin name="GPIO13" x="17.78" y="2.54" length="short" rot="R180"/>
-<pin name="GPIO14" x="17.78" y="0" length="short" rot="R180"/>
-<pin name="GPIO15" x="17.78" y="-2.54" length="short" rot="R180"/>
-<pin name="GPIO16" x="17.78" y="-5.08" length="short" rot="R180"/>
-<pin name="GPIO17" x="17.78" y="-7.62" length="short" rot="R180"/>
-<pin name="GPIO18" x="17.78" y="-10.16" length="short" rot="R180"/>
-<pin name="GPIO19" x="17.78" y="-12.7" length="short" rot="R180"/>
-<pin name="GPIO20" x="17.78" y="-15.24" length="short" rot="R180"/>
-<pin name="GPIO21" x="17.78" y="-17.78" length="short" rot="R180"/>
-<pin name="GPIO22" x="17.78" y="-20.32" length="short" rot="R180"/>
-<pin name="GPIO23" x="17.78" y="-22.86" length="short" rot="R180"/>
-<pin name="GPIO24" x="17.78" y="-25.4" length="short" rot="R180"/>
-<pin name="GPIO25" x="17.78" y="-27.94" length="short" rot="R180"/>
-<pin name="GPIO26/ADC0" x="17.78" y="-30.48" length="short" rot="R180"/>
-<pin name="GPIO27/ADC1" x="17.78" y="-33.02" length="short" rot="R180"/>
-<pin name="GPIO28/ADC2" x="17.78" y="-35.56" length="short" rot="R180"/>
-<pin name="GPIO29/ADC3" x="17.78" y="-38.1" length="short" rot="R180"/>
-<pin name="LDO_IN" x="-17.78" y="30.48" length="short"/>
-<pin name="LDO_OUT" x="-17.78" y="27.94" length="short"/>
-<pin name="QSPI_SD3" x="-17.78" y="-25.4" length="short"/>
-<pin name="QSPI_SCLK" x="-17.78" y="-27.94" length="short"/>
-<pin name="QSPI_SD0" x="-17.78" y="-17.78" length="short"/>
-<pin name="QSPI_SD2" x="-17.78" y="-22.86" length="short"/>
-<pin name="QSPI_SD1" x="-17.78" y="-20.32" length="short"/>
-<pin name="QSPI_!CS!" x="-17.78" y="-30.48" length="short"/>
-</symbol>
-<symbol name="1.1V">
-<description>&lt;h3&gt;1.1V Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-<pin name="1.1V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="RP2040" prefix="U">
-<description>&lt;h3&gt;Raspberry Pi RP2040 MCU&lt;/h3&gt;
-
-&lt;p&gt;56-pin 32-bit Microcontroller with 264kB of SRAM and external flash support up to 16MB&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://pico.raspberrypi.org/getting-started/"&gt;Getting Started with the RP2040&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Dual-core ARM Cortex M0+ processor, flexible clock running up to 133 MHz&lt;li&gt;
-&lt;li&gt;264kB of SRAM, and QSPI control of common flash memory&lt;li&gt;
-&lt;li&gt;USB 1.1 Host and Device support&lt;li&gt;
-&lt;li&gt;Low-power sleep and dormant modes&lt;li&gt;
-&lt;li&gt;Drag &amp; drop programming using mass storage over USB&lt;li&gt;
-&lt;li&gt;26 multi-function GPIO pins&lt;li&gt;
-&lt;li&gt;2×SPI, 2×I2C, 2×UART, 3×12-bit ADC, 16×controllable PWM channels&lt;li&gt;
-&lt;li&gt;Accurate clock and timer on-chip&lt;li&gt;
-&lt;li&gt;Temperature sensor&lt;li&gt;
-&lt;li&gt;Accelerated floating point libraries on-chip&lt;li&gt;
-&lt;li&gt;8×Programmable IO (PIO) state machines for custom peripheral support&lt;li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="U1" symbol="RP2040" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="QFN-56">
-<connects>
-<connect gate="U1" pin="ADC_VDD" pad="43"/>
-<connect gate="U1" pin="GND" pad="EPAD"/>
-<connect gate="U1" pin="GPIO0" pad="2"/>
-<connect gate="U1" pin="GPIO1" pad="3"/>
-<connect gate="U1" pin="GPIO10" pad="13"/>
-<connect gate="U1" pin="GPIO11" pad="14"/>
-<connect gate="U1" pin="GPIO12" pad="15"/>
-<connect gate="U1" pin="GPIO13" pad="16"/>
-<connect gate="U1" pin="GPIO14" pad="17"/>
-<connect gate="U1" pin="GPIO15" pad="18"/>
-<connect gate="U1" pin="GPIO16" pad="27"/>
-<connect gate="U1" pin="GPIO17" pad="28"/>
-<connect gate="U1" pin="GPIO18" pad="29"/>
-<connect gate="U1" pin="GPIO19" pad="30"/>
-<connect gate="U1" pin="GPIO2" pad="4"/>
-<connect gate="U1" pin="GPIO20" pad="31"/>
-<connect gate="U1" pin="GPIO21" pad="32"/>
-<connect gate="U1" pin="GPIO22" pad="34"/>
-<connect gate="U1" pin="GPIO23" pad="35"/>
-<connect gate="U1" pin="GPIO24" pad="36"/>
-<connect gate="U1" pin="GPIO25" pad="37"/>
-<connect gate="U1" pin="GPIO26/ADC0" pad="38"/>
-<connect gate="U1" pin="GPIO27/ADC1" pad="39"/>
-<connect gate="U1" pin="GPIO28/ADC2" pad="40"/>
-<connect gate="U1" pin="GPIO29/ADC3" pad="41"/>
-<connect gate="U1" pin="GPIO3" pad="5"/>
-<connect gate="U1" pin="GPIO4" pad="6"/>
-<connect gate="U1" pin="GPIO5" pad="7"/>
-<connect gate="U1" pin="GPIO6" pad="8"/>
-<connect gate="U1" pin="GPIO7" pad="9"/>
-<connect gate="U1" pin="GPIO8" pad="11"/>
-<connect gate="U1" pin="GPIO9" pad="12"/>
-<connect gate="U1" pin="LDO_IN" pad="44"/>
-<connect gate="U1" pin="LDO_OUT" pad="45"/>
-<connect gate="U1" pin="QSPI_!CS!" pad="56"/>
-<connect gate="U1" pin="QSPI_SCLK" pad="52"/>
-<connect gate="U1" pin="QSPI_SD0" pad="53"/>
-<connect gate="U1" pin="QSPI_SD1" pad="55"/>
-<connect gate="U1" pin="QSPI_SD2" pad="54"/>
-<connect gate="U1" pin="QSPI_SD3" pad="51"/>
-<connect gate="U1" pin="RUN" pad="26"/>
-<connect gate="U1" pin="SWCLK" pad="24"/>
-<connect gate="U1" pin="SWDIO" pad="25"/>
-<connect gate="U1" pin="TESTEN" pad="19"/>
-<connect gate="U1" pin="USB_D+" pad="47"/>
-<connect gate="U1" pin="USB_D-" pad="46"/>
-<connect gate="U1" pin="USB_VDD" pad="48"/>
-<connect gate="U1" pin="VDDIO" pad="1 10 22 33 42 49"/>
-<connect gate="U1" pin="VDD_1V1" pad="23 50"/>
-<connect gate="U1" pin="XIN" pad="20"/>
-<connect gate="U1" pin="XOUT" pad="21"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-15502" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="1.1V" prefix="SUPPLY">
-<description>&lt;h3&gt;1.1V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 1.1V source.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="1.1V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -17259,6 +16916,362 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-IC-Microcontroller">
+<description>&lt;h3&gt;SparkFun Microcontrollers&lt;/h3&gt;
+This library contains microcontrollers.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="QFN-56">
+<wire x1="3.1" y1="-3.5" x2="3.5" y2="-3.5" width="0.1524" layer="21"/>
+<wire x1="3.5" y1="-3.1" x2="3.5" y2="-3.5" width="0.1524" layer="21"/>
+<wire x1="-3.1" y1="-3.5" x2="-3.5" y2="-3.5" width="0.1524" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="-3.1" width="0.1524" layer="21"/>
+<wire x1="3.5" y1="3.1" x2="3.5" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.1" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.02" layer="51"/>
+<wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.02" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.02" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.02" layer="51"/>
+<smd name="1" x="-3.4365" y="2.6" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="2" x="-3.4365" y="2.2" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="3" x="-3.4365" y="1.8" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="4" x="-3.4365" y="1.4" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="5" x="-3.4365" y="1" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="6" x="-3.4365" y="0.6" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="7" x="-3.4365" y="0.2" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<text x="0" y="2.159" size="0.6096" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.3" size="0.6096" layer="27" align="center">&gt;VALUE</text>
+<smd name="EPAD" x="0" y="0" dx="3.2" dy="3.2" layer="1" cream="no"/>
+<rectangle x1="-3.5" y1="0.51" x2="-3.1" y2="0.69" layer="51"/>
+<rectangle x1="-3.5" y1="0.91" x2="-3.1" y2="1.09" layer="51"/>
+<rectangle x1="-3.5" y1="1.31" x2="-3.1" y2="1.49" layer="51"/>
+<rectangle x1="-3.5" y1="1.71" x2="-3.1" y2="1.89" layer="51"/>
+<rectangle x1="-3.5" y1="2.11" x2="-3.1" y2="2.29" layer="51"/>
+<rectangle x1="-3.5" y1="2.51" x2="-3.1" y2="2.69" layer="51"/>
+<rectangle x1="-3.5" y1="0.11" x2="-3.1" y2="0.29" layer="51"/>
+<rectangle x1="-3.5" y1="-0.29" x2="-3.1" y2="-0.11" layer="51"/>
+<smd name="8" x="-3.4365" y="-0.2" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="9" x="-3.4365" y="-0.6" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="10" x="-3.4365" y="-1" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="11" x="-3.4365" y="-1.4" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="12" x="-3.4365" y="-1.8" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="13" x="-3.4365" y="-2.2" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<smd name="14" x="-3.4365" y="-2.6" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<rectangle x1="-3.5" y1="-2.29" x2="-3.1" y2="-2.11" layer="51"/>
+<rectangle x1="-3.5" y1="-1.89" x2="-3.1" y2="-1.71" layer="51"/>
+<rectangle x1="-3.5" y1="-1.49" x2="-3.1" y2="-1.31" layer="51"/>
+<rectangle x1="-3.5" y1="-1.09" x2="-3.1" y2="-0.91" layer="51"/>
+<rectangle x1="-3.5" y1="-0.69" x2="-3.1" y2="-0.51" layer="51"/>
+<rectangle x1="-3.5" y1="-2.69" x2="-3.1" y2="-2.51" layer="51"/>
+<rectangle x1="-3.75" y1="0.1" x2="-3.1" y2="0.3" layer="31"/>
+<rectangle x1="-1.3" y1="0.7" x2="-0.7" y2="1.3" layer="31"/>
+<rectangle x1="-3.75" y1="0.5" x2="-3.1" y2="0.7" layer="31"/>
+<rectangle x1="-3.75" y1="0.9" x2="-3.1" y2="1.1" layer="31"/>
+<rectangle x1="-3.75" y1="1.3" x2="-3.1" y2="1.5" layer="31"/>
+<rectangle x1="-3.75" y1="1.7" x2="-3.1" y2="1.9" layer="31"/>
+<rectangle x1="-3.75" y1="2.1" x2="-3.1" y2="2.3" layer="31"/>
+<rectangle x1="-3.75" y1="2.5" x2="-3.1" y2="2.7" layer="31"/>
+<rectangle x1="-3.75" y1="-2.7" x2="-3.1" y2="-2.5" layer="31"/>
+<rectangle x1="-3.75" y1="-2.3" x2="-3.1" y2="-2.1" layer="31"/>
+<rectangle x1="-3.75" y1="-1.9" x2="-3.1" y2="-1.7" layer="31"/>
+<rectangle x1="-3.75" y1="-1.5" x2="-3.1" y2="-1.3" layer="31"/>
+<rectangle x1="-3.75" y1="-1.1" x2="-3.1" y2="-0.9" layer="31"/>
+<rectangle x1="-3.75" y1="-0.7" x2="-3.1" y2="-0.5" layer="31"/>
+<rectangle x1="-3.75" y1="-0.3" x2="-3.1" y2="-0.1" layer="31"/>
+<circle x="-3.937" y="3.175" radius="0.05" width="0.254" layer="21"/>
+<wire x1="-3.1" y1="3.5" x2="-3.5" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="-3.5" y2="3.1" width="0.1524" layer="21"/>
+<smd name="15" x="-2.6" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="16" x="-2.2" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="17" x="-1.8" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="18" x="-1.4" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="19" x="-1" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="20" x="-0.6" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="21" x="-0.2" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<rectangle x1="-0.8" y1="-3.39" x2="-0.4" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="-1.2" y1="-3.39" x2="-0.8" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="-1.6" y1="-3.39" x2="-1.2" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="-2" y1="-3.39" x2="-1.6" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="-2.4" y1="-3.39" x2="-2" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="-2.8" y1="-3.39" x2="-2.4" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="-0.4" y1="-3.39" x2="0" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="0" y1="-3.39" x2="0.4" y2="-3.21" layer="51" rot="R90"/>
+<smd name="22" x="0.2" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="23" x="0.6" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="24" x="1" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="25" x="1.4" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="26" x="1.8" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="27" x="2.2" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<smd name="28" x="2.6" y="-3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<rectangle x1="2" y1="-3.39" x2="2.4" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="1.6" y1="-3.39" x2="2" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="1.2" y1="-3.39" x2="1.6" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="0.8" y1="-3.39" x2="1.2" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="0.4" y1="-3.39" x2="0.8" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="2.4" y1="-3.39" x2="2.8" y2="-3.21" layer="51" rot="R90"/>
+<rectangle x1="-0.525" y1="-3.525" x2="0.125" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="-0.925" y1="-3.525" x2="-0.275" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="-1.325" y1="-3.525" x2="-0.675" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="-1.725" y1="-3.525" x2="-1.075" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="-2.125" y1="-3.525" x2="-1.475" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="-2.525" y1="-3.525" x2="-1.875" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="-2.925" y1="-3.525" x2="-2.275" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="2.275" y1="-3.525" x2="2.925" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="1.875" y1="-3.525" x2="2.525" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="1.475" y1="-3.525" x2="2.125" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="1.075" y1="-3.525" x2="1.725" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="0.675" y1="-3.525" x2="1.325" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="0.275" y1="-3.525" x2="0.925" y2="-3.325" layer="31" rot="R90"/>
+<rectangle x1="-0.125" y1="-3.525" x2="0.525" y2="-3.325" layer="31" rot="R90"/>
+<smd name="29" x="3.4365" y="-2.6" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="30" x="3.4365" y="-2.2" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="31" x="3.4365" y="-1.8" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="32" x="3.4365" y="-1.4" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="33" x="3.4365" y="-1" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="34" x="3.4365" y="-0.6" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="35" x="3.4365" y="-0.2" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<rectangle x1="3.1" y1="-0.69" x2="3.5" y2="-0.51" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="-1.09" x2="3.5" y2="-0.91" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="-1.49" x2="3.5" y2="-1.31" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="-1.89" x2="3.5" y2="-1.71" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="-2.29" x2="3.5" y2="-2.11" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="-2.69" x2="3.5" y2="-2.51" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="-0.29" x2="3.5" y2="-0.11" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="0.11" x2="3.5" y2="0.29" layer="51" rot="R180"/>
+<smd name="36" x="3.4365" y="0.2" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="37" x="3.4365" y="0.6" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="38" x="3.4365" y="1" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="39" x="3.4365" y="1.4" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="40" x="3.4365" y="1.8" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="41" x="3.4365" y="2.2" dx="0.875" dy="0.2" layer="1" roundness="40" cream="no"/>
+<smd name="42" x="3.4365" y="2.6" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R180" cream="no"/>
+<rectangle x1="3.1" y1="2.11" x2="3.5" y2="2.29" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="1.71" x2="3.5" y2="1.89" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="1.31" x2="3.5" y2="1.49" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="0.91" x2="3.5" y2="1.09" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="0.51" x2="3.5" y2="0.69" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="2.51" x2="3.5" y2="2.69" layer="51" rot="R180"/>
+<rectangle x1="3.1" y1="-0.3" x2="3.75" y2="-0.1" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="-0.7" x2="3.75" y2="-0.5" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="-1.1" x2="3.75" y2="-0.9" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="-1.5" x2="3.75" y2="-1.3" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="-1.9" x2="3.75" y2="-1.7" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="-2.3" x2="3.75" y2="-2.1" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="-2.7" x2="3.75" y2="-2.5" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="2.5" x2="3.75" y2="2.7" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="2.1" x2="3.75" y2="2.3" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="1.7" x2="3.75" y2="1.9" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="1.3" x2="3.75" y2="1.5" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="0.9" x2="3.75" y2="1.1" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="0.5" x2="3.75" y2="0.7" layer="31" rot="R180"/>
+<rectangle x1="3.1" y1="0.1" x2="3.75" y2="0.3" layer="31" rot="R180"/>
+<smd name="43" x="2.6" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="44" x="2.2" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="45" x="1.8" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="46" x="1.4" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="47" x="1" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="48" x="0.6" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="49" x="0.2" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<rectangle x1="0.4" y1="3.21" x2="0.8" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="0.8" y1="3.21" x2="1.2" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="1.2" y1="3.21" x2="1.6" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="1.6" y1="3.21" x2="2" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="2" y1="3.21" x2="2.4" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="2.4" y1="3.21" x2="2.8" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="0" y1="3.21" x2="0.4" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="-0.4" y1="3.21" x2="0" y2="3.39" layer="51" rot="R270"/>
+<smd name="50" x="-0.2" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="51" x="-0.6" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="52" x="-1" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="53" x="-1.4" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="54" x="-1.8" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="55" x="-2.2" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R90" cream="no"/>
+<smd name="56" x="-2.6" y="3.4365" dx="0.875" dy="0.2" layer="1" roundness="40" rot="R270" cream="no"/>
+<rectangle x1="-2.4" y1="3.21" x2="-2" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="-2" y1="3.21" x2="-1.6" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="-1.6" y1="3.21" x2="-1.2" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="-1.2" y1="3.21" x2="-0.8" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="-0.8" y1="3.21" x2="-0.4" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="-2.8" y1="3.21" x2="-2.4" y2="3.39" layer="51" rot="R270"/>
+<rectangle x1="-0.125" y1="3.325" x2="0.525" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="0.275" y1="3.325" x2="0.925" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="0.675" y1="3.325" x2="1.325" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="1.075" y1="3.325" x2="1.725" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="1.475" y1="3.325" x2="2.125" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="1.875" y1="3.325" x2="2.525" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="2.275" y1="3.325" x2="2.925" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="-2.925" y1="3.325" x2="-2.275" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="-2.525" y1="3.325" x2="-1.875" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="-2.125" y1="3.325" x2="-1.475" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="-1.725" y1="3.325" x2="-1.075" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="-1.325" y1="3.325" x2="-0.675" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="-0.925" y1="3.325" x2="-0.275" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="-0.525" y1="3.325" x2="0.125" y2="3.525" layer="31" rot="R270"/>
+<rectangle x1="-1.3" y1="-1.3" x2="-0.7" y2="-0.7" layer="31"/>
+<rectangle x1="0.7" y1="-1.3" x2="1.3" y2="-0.7" layer="31"/>
+<rectangle x1="0.7" y1="0.7" x2="1.3" y2="1.3" layer="31"/>
+<rectangle x1="-0.3" y1="-0.3" x2="0.3" y2="0.3" layer="31"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RP2040">
+<wire x1="-15.24" y1="38.1" x2="-15.24" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-40.64" x2="15.24" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-40.64" x2="15.24" y2="38.1" width="0.254" layer="94"/>
+<wire x1="15.24" y1="38.1" x2="-15.24" y2="38.1" width="0.254" layer="94"/>
+<text x="-15.24" y="38.354" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-43.18" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="RUN" x="-17.78" y="17.78" length="short"/>
+<pin name="VDD_1V1" x="-17.78" y="25.4" length="short"/>
+<pin name="TESTEN" x="-17.78" y="-35.56" length="short"/>
+<pin name="USB_D+" x="-17.78" y="12.7" length="short"/>
+<pin name="USB_D-" x="-17.78" y="10.16" length="short"/>
+<pin name="GND" x="-17.78" y="-38.1" length="short"/>
+<pin name="USB_VDD" x="-17.78" y="33.02" length="short"/>
+<pin name="GPIO0" x="17.78" y="35.56" length="short" rot="R180"/>
+<pin name="ADC_VDD" x="-17.78" y="22.86" length="short"/>
+<pin name="SWDIO" x="-17.78" y="-12.7" length="short"/>
+<pin name="SWCLK" x="-17.78" y="-10.16" length="short"/>
+<pin name="VDDIO" x="-17.78" y="35.56" length="short"/>
+<pin name="XIN" x="-17.78" y="2.54" length="short"/>
+<pin name="XOUT" x="-17.78" y="0" length="short"/>
+<pin name="GPIO1" x="17.78" y="33.02" length="short" rot="R180"/>
+<pin name="GPIO2" x="17.78" y="30.48" length="short" rot="R180"/>
+<pin name="GPIO3" x="17.78" y="27.94" length="short" rot="R180"/>
+<pin name="GPIO4" x="17.78" y="25.4" length="short" rot="R180"/>
+<pin name="GPIO5" x="17.78" y="22.86" length="short" rot="R180"/>
+<pin name="GPIO6" x="17.78" y="20.32" length="short" rot="R180"/>
+<pin name="GPIO7" x="17.78" y="17.78" length="short" rot="R180"/>
+<pin name="GPIO8" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="GPIO9" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="GPIO10" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="GPIO11" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="GPIO12" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="GPIO13" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="GPIO14" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="GPIO15" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="GPIO16" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="GPIO17" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="GPIO18" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="GPIO19" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="GPIO20" x="17.78" y="-15.24" length="short" rot="R180"/>
+<pin name="GPIO21" x="17.78" y="-17.78" length="short" rot="R180"/>
+<pin name="GPIO22" x="17.78" y="-20.32" length="short" rot="R180"/>
+<pin name="GPIO23" x="17.78" y="-22.86" length="short" rot="R180"/>
+<pin name="GPIO24" x="17.78" y="-25.4" length="short" rot="R180"/>
+<pin name="GPIO25" x="17.78" y="-27.94" length="short" rot="R180"/>
+<pin name="GPIO26/ADC0" x="17.78" y="-30.48" length="short" rot="R180"/>
+<pin name="GPIO27/ADC1" x="17.78" y="-33.02" length="short" rot="R180"/>
+<pin name="GPIO28/ADC2" x="17.78" y="-35.56" length="short" rot="R180"/>
+<pin name="GPIO29/ADC3" x="17.78" y="-38.1" length="short" rot="R180"/>
+<pin name="LDO_IN" x="-17.78" y="30.48" length="short"/>
+<pin name="LDO_OUT" x="-17.78" y="27.94" length="short"/>
+<pin name="QSPI_SD3" x="-17.78" y="-25.4" length="short"/>
+<pin name="QSPI_SCLK" x="-17.78" y="-27.94" length="short"/>
+<pin name="QSPI_SD0" x="-17.78" y="-17.78" length="short"/>
+<pin name="QSPI_SD2" x="-17.78" y="-22.86" length="short"/>
+<pin name="QSPI_SD1" x="-17.78" y="-20.32" length="short"/>
+<pin name="QSPI_!CS!" x="-17.78" y="-30.48" length="short"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RP2040" prefix="U">
+<description>&lt;h3&gt;Raspberry Pi RP2040 MCU&lt;/h3&gt;
+
+&lt;p&gt;56-pin 32-bit Microcontroller with 264kB of SRAM and external flash support up to 16MB&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pico.raspberrypi.org/getting-started/"&gt;Getting Started with the RP2040&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dual-core ARM Cortex M0+ processor, flexible clock running up to 133 MHz&lt;li&gt;
+&lt;li&gt;264kB of SRAM, and QSPI control of common flash memory&lt;li&gt;
+&lt;li&gt;USB 1.1 Host and Device support&lt;li&gt;
+&lt;li&gt;Low-power sleep and dormant modes&lt;li&gt;
+&lt;li&gt;Drag &amp; drop programming using mass storage over USB&lt;li&gt;
+&lt;li&gt;26 multi-function GPIO pins&lt;li&gt;
+&lt;li&gt;2×SPI, 2×I2C, 2×UART, 3×12-bit ADC, 16×controllable PWM channels&lt;li&gt;
+&lt;li&gt;Accurate clock and timer on-chip&lt;li&gt;
+&lt;li&gt;Temperature sensor&lt;li&gt;
+&lt;li&gt;Accelerated floating point libraries on-chip&lt;li&gt;
+&lt;li&gt;8×Programmable IO (PIO) state machines for custom peripheral support&lt;li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="U1" symbol="RP2040" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-56">
+<connects>
+<connect gate="U1" pin="ADC_VDD" pad="43"/>
+<connect gate="U1" pin="GND" pad="EPAD"/>
+<connect gate="U1" pin="GPIO0" pad="2"/>
+<connect gate="U1" pin="GPIO1" pad="3"/>
+<connect gate="U1" pin="GPIO10" pad="13"/>
+<connect gate="U1" pin="GPIO11" pad="14"/>
+<connect gate="U1" pin="GPIO12" pad="15"/>
+<connect gate="U1" pin="GPIO13" pad="16"/>
+<connect gate="U1" pin="GPIO14" pad="17"/>
+<connect gate="U1" pin="GPIO15" pad="18"/>
+<connect gate="U1" pin="GPIO16" pad="27"/>
+<connect gate="U1" pin="GPIO17" pad="28"/>
+<connect gate="U1" pin="GPIO18" pad="29"/>
+<connect gate="U1" pin="GPIO19" pad="30"/>
+<connect gate="U1" pin="GPIO2" pad="4"/>
+<connect gate="U1" pin="GPIO20" pad="31"/>
+<connect gate="U1" pin="GPIO21" pad="32"/>
+<connect gate="U1" pin="GPIO22" pad="34"/>
+<connect gate="U1" pin="GPIO23" pad="35"/>
+<connect gate="U1" pin="GPIO24" pad="36"/>
+<connect gate="U1" pin="GPIO25" pad="37"/>
+<connect gate="U1" pin="GPIO26/ADC0" pad="38"/>
+<connect gate="U1" pin="GPIO27/ADC1" pad="39"/>
+<connect gate="U1" pin="GPIO28/ADC2" pad="40"/>
+<connect gate="U1" pin="GPIO29/ADC3" pad="41"/>
+<connect gate="U1" pin="GPIO3" pad="5"/>
+<connect gate="U1" pin="GPIO4" pad="6"/>
+<connect gate="U1" pin="GPIO5" pad="7"/>
+<connect gate="U1" pin="GPIO6" pad="8"/>
+<connect gate="U1" pin="GPIO7" pad="9"/>
+<connect gate="U1" pin="GPIO8" pad="11"/>
+<connect gate="U1" pin="GPIO9" pad="12"/>
+<connect gate="U1" pin="LDO_IN" pad="44"/>
+<connect gate="U1" pin="LDO_OUT" pad="45"/>
+<connect gate="U1" pin="QSPI_!CS!" pad="56"/>
+<connect gate="U1" pin="QSPI_SCLK" pad="52"/>
+<connect gate="U1" pin="QSPI_SD0" pad="53"/>
+<connect gate="U1" pin="QSPI_SD1" pad="55"/>
+<connect gate="U1" pin="QSPI_SD2" pad="54"/>
+<connect gate="U1" pin="QSPI_SD3" pad="51"/>
+<connect gate="U1" pin="RUN" pad="26"/>
+<connect gate="U1" pin="SWCLK" pad="24"/>
+<connect gate="U1" pin="SWDIO" pad="25"/>
+<connect gate="U1" pin="TESTEN" pad="19"/>
+<connect gate="U1" pin="USB_D+" pad="47"/>
+<connect gate="U1" pin="USB_D-" pad="46"/>
+<connect gate="U1" pin="USB_VDD" pad="48"/>
+<connect gate="U1" pin="VDDIO" pad="1 10 22 33 42 49"/>
+<connect gate="U1" pin="VDD_1V1" pad="23 50"/>
+<connect gate="U1" pin="XIN" pad="20"/>
+<connect gate="U1" pin="XOUT" pad="21"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-15502" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17300,7 +17313,7 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <part name="C5" library="SparkFun-Capacitors" deviceset="15PF" device="-0402T-50V-5%" value="15pF"/>
 <part name="C16" library="SparkFun-Capacitors" deviceset="15PF" device="-0402T-50V-5%" value="15pF"/>
 <part name="GND35" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U5" library="RP2040" deviceset="RP2040" device=""/>
+<part name="U5" library="SparkFun-IC-Microcontroller" deviceset="RP2040" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R11" library="SparkFun-Resistors" deviceset="1KOHM" device="-0402T-1/16W-1%" value="1k"/>
 <part name="SUPPLY17" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -17328,13 +17341,13 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <part name="GND25" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R12" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27"/>
 <part name="R13" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27"/>
-<part name="SUPPLY29" library="RP2040" deviceset="1.1V" device=""/>
-<part name="SUPPLY30" library="RP2040" deviceset="1.1V" device=""/>
-<part name="SUPPLY31" library="RP2040" deviceset="1.1V" device=""/>
+<part name="SUPPLY29" library="SparkFun-PowerSymbols" deviceset="1.1V" device=""/>
+<part name="SUPPLY30" library="SparkFun-PowerSymbols" deviceset="1.1V" device=""/>
+<part name="SUPPLY31" library="SparkFun-PowerSymbols" deviceset="1.1V" device=""/>
 <part name="C26" library="SparkFun-Capacitors" deviceset="2.2UF" device="-0402_TIGHT-10V-10%-X5R" value="2.2uF"/>
 <part name="C27" library="SparkFun-Capacitors" deviceset="2.2UF" device="-0402_TIGHT-10V-10%-X5R" value="2.2uF"/>
 <part name="SUPPLY32" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY33" library="RP2040" deviceset="1.1V" device=""/>
+<part name="SUPPLY33" library="SparkFun-PowerSymbols" deviceset="1.1V" device=""/>
 <part name="GND27" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND29" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C28" library="SparkFun-Capacitors" deviceset="2.2UF" device="-0402_TIGHT-10V-10%-X5R" value="2.2uF"/>
@@ -17449,7 +17462,6 @@ VIN: 2.5V-6V</text>
 <wire x1="330.2" y1="193.04" x2="431.8" y2="193.04" width="0.2032" layer="97" style="longdash"/>
 <wire x1="121.92" y1="279.4" x2="121.92" y2="193.04" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="279.4" x2="330.2" y2="193.04" width="0.2032" layer="97" style="longdash"/>
-<wire x1="198.12" y1="66.04" x2="198.12" y2="0" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="35.56" x2="330.2" y2="66.04" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="66.04" x2="330.2" y2="106.68" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="106.68" x2="330.2" y2="132.08" width="0.2032" layer="97" style="longdash"/>
@@ -17465,10 +17477,11 @@ VIN: 2.5V-6V</text>
 <text x="383.54" y="274.32" size="2.54" layer="94" font="vector" align="center">USB Connector</text>
 <wire x1="259.08" y1="66.04" x2="228.6" y2="66.04" width="0.2032" layer="97" style="longdash"/>
 <wire x1="228.6" y1="66.04" x2="198.12" y2="66.04" width="0.2032" layer="97" style="longdash"/>
+<wire x1="198.12" y1="66.04" x2="193.04" y2="66.04" width="0.2032" layer="97" style="longdash"/>
 <wire x1="259.08" y1="66.04" x2="259.08" y2="132.08" width="0.1524" layer="97" style="longdash"/>
 <wire x1="259.08" y1="132.08" x2="259.08" y2="193.04" width="0.1524" layer="97" style="longdash"/>
 <wire x1="259.08" y1="132.08" x2="330.2" y2="132.08" width="0.1524" layer="97" style="longdash"/>
-<wire x1="121.92" y1="193.04" x2="198.12" y2="193.04" width="0.1524" layer="97" style="longdash"/>
+<wire x1="121.92" y1="193.04" x2="193.04" y2="193.04" width="0.1524" layer="97" style="longdash"/>
 <text x="287.02" y="139.7" size="1.778" layer="97" font="vector">Cut the I2C pullup 
 jumper to remove the 
 pullups from the SDA and 
@@ -17477,10 +17490,10 @@ SCL lines</text>
 <text x="133.604" y="133.096" size="1.27" layer="97" font="vector" align="center">PIO must be contiguous
 for SDIO DAT pins
 but can fall back to SPI1</text>
-<wire x1="198.12" y1="193.04" x2="259.08" y2="193.04" width="0.1524" layer="97" style="longdash"/>
-<wire x1="198.12" y1="66.04" x2="198.12" y2="132.08" width="0.2032" layer="97" style="longdash"/>
-<wire x1="198.12" y1="132.08" x2="198.12" y2="193.04" width="0.2032" layer="97" style="longdash"/>
-<wire x1="259.08" y1="132.08" x2="198.12" y2="132.08" width="0.2032" layer="97" style="longdash"/>
+<wire x1="193.04" y1="193.04" x2="259.08" y2="193.04" width="0.1524" layer="97" style="longdash"/>
+<wire x1="193.04" y1="66.04" x2="193.04" y2="132.08" width="0.2032" layer="97" style="longdash"/>
+<wire x1="193.04" y1="132.08" x2="193.04" y2="193.04" width="0.2032" layer="97" style="longdash"/>
+<wire x1="259.08" y1="132.08" x2="193.04" y2="132.08" width="0.2032" layer="97" style="longdash"/>
 <text x="381" y="182.88" size="2.54" layer="94" font="vector" align="center">16MB / 128mbit Flash</text>
 <text x="294.64" y="127" size="2.54" layer="94" font="vector" align="center">uSD Connector</text>
 <text x="228.6" y="127" size="2.54" layer="94" font="vector" align="center">Battery Fuel Gauge </text>
@@ -17494,8 +17507,9 @@ but can fall back to SPI1</text>
 <wire x1="228.6" y1="66.04" x2="228.6" y2="0" width="0.2032" layer="97" style="longdash"/>
 <text x="243.84" y="60.96" size="2.54" layer="94" font="vector" align="center">Power LED</text>
 <wire x1="104.14" y1="0" x2="104.14" y2="66.04" width="0.2032" layer="97" style="longdash"/>
-<wire x1="104.14" y1="66.04" x2="198.12" y2="66.04" width="0.2032" layer="97" style="longdash"/>
+<wire x1="104.14" y1="66.04" x2="193.04" y2="66.04" width="0.2032" layer="97" style="longdash"/>
 <text x="154.94" y="60.96" size="2.54" layer="94" font="vector" align="center">MikroBUS socket</text>
+<wire x1="198.12" y1="66.04" x2="198.12" y2="0" width="0.2032" layer="97" style="longdash"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -17848,8 +17862,8 @@ but can fall back to SPI1</text>
 <instance part="SUPPLY23" gate="G$1" x="373.38" y="246.38" smashed="yes">
 <attribute name="VALUE" x="373.38" y="249.174" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="360.68" y="91.44" smashed="yes">
-<attribute name="VALUE" x="360.68" y="94.234" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY14" gate="G$1" x="355.6" y="91.44" smashed="yes">
+<attribute name="VALUE" x="355.6" y="94.234" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY6" gate="G$1" x="48.26" y="251.46" smashed="yes">
 <attribute name="VALUE" x="48.26" y="254.254" size="1.778" layer="96" align="bottom-center"/>
@@ -18452,8 +18466,8 @@ but can fall back to SPI1</text>
 <pinref part="SUPPLY23" gate="G$1" pin="V_USB"/>
 </segment>
 <segment>
-<wire x1="360.68" y1="91.44" x2="360.68" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="83.82" x2="368.3" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="91.44" x2="355.6" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="83.82" x2="368.3" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="J8" gate="G$1" pin="3"/>
 <pinref part="SUPPLY14" gate="G$1" pin="V_USB"/>
 </segment>
