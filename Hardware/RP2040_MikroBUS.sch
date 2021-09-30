@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -11843,7 +11843,7 @@ jumper to remove the
 pullups from the SDA and 
 SCL lines</text>
 <text x="76.454" y="177.546" size="2.54" layer="94" font="vector" align="center">Raspberry Pi RP2040</text>
-<text x="133.604" y="133.096" size="1.27" layer="97" align="center">PIO must be contiguous
+<text x="133.604" y="133.096" size="1.27" layer="97" font="vector" align="center">PIO must be contiguous
 for SDIO DAT pins
 but can fall back to SPI1</text>
 <wire x1="198.12" y1="193.04" x2="259.08" y2="193.04" width="0.1524" layer="97" style="longdash"/>
@@ -11855,7 +11855,7 @@ but can fall back to SPI1</text>
 <text x="228.6" y="127" size="2.54" layer="94" font="vector" align="center">Battery Fuel Gauge </text>
 <text x="228.6" y="187.96" size="2.54" layer="94" font="vector" align="center">WS2812</text>
 <wire x1="259.08" y1="66.04" x2="259.08" y2="0" width="0.2032" layer="97" style="longdash"/>
-<text x="218.44" y="73.66" size="1.778" layer="97">I2C_ADDR: 0x36</text>
+<text x="218.44" y="73.66" size="1.778" layer="97" font="vector">I2C_ADDR: 0x36</text>
 <wire x1="294.64" y1="66.04" x2="294.64" y2="0" width="0.2032" layer="97" style="longdash"/>
 <text x="276.86" y="60.96" size="2.54" layer="94" font="vector" align="center">Boot Select</text>
 <wire x1="259.08" y1="193.04" x2="259.08" y2="279.4" width="0.2032" layer="97" style="longdash"/>
