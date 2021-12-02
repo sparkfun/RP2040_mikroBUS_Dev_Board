@@ -46,9 +46,9 @@
 //////////////////////////
 // MicroOLED Definition //
 //////////////////////////
-#define PIN_RESET 17  // Connect RST to pin 9 (req. for SPI and I2C)
-#define PIN_DC    16  // Connect DC to pin 8 (required for SPI)
-#define PIN_CS    5 // Connect CS to pin 10 (required for SPI)
+#define PIN_RESET 17  // Connect RST to pin INT on the mikroBUS socket
+#define PIN_DC    16  // Connect DC to pin PWM on the mikroBUS socket
+#define PIN_CS    5 // Connect CS to pin CS on the mikroBUS socket
 #define DC_JUMPER 0 // Set to either 0 (default) or 1 based on jumper, matching the value of the DC Jumper
 // Also connect pin 13 to SCK and pin 11 to MOSI
 
