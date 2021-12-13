@@ -33047,13 +33047,6 @@ but can fall back to SPI1</text>
 <wire x1="243.84" y1="27.94" x2="243.84" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MIK_RST" class="0">
-<segment>
-<pinref part="J9" gate="J1" pin="RST"/>
-<wire x1="137.16" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
-<label x="132.08" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="!SPI0_CS!" class="0">
 <segment>
 <pinref part="U5" gate="U1" pin="GPIO5"/>
@@ -33071,6 +33064,18 @@ but can fall back to SPI1</text>
 <pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="PWR" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="35.56" x2="243.84" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPIO13" class="0">
+<segment>
+<pinref part="U5" gate="U1" pin="GPIO13"/>
+<wire x1="114.3" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
+<label x="116.84" y="129.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J9" gate="J1" pin="RST"/>
+<wire x1="137.16" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
+<label x="132.08" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
