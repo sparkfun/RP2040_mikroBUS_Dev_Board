@@ -31211,7 +31211,7 @@ VIN: 2.5V-6V</text>
 <text x="312.42" y="60.96" size="2.54" layer="94" font="vector" align="center">Reset Button</text>
 <text x="213.36" y="60.96" size="2.54" layer="94" font="vector" align="center">Status LED</text>
 <text x="381" y="101.6" size="2.54" layer="94" font="vector" align="center">Headers</text>
-<text x="421.64" y="10.16" size="2.54" layer="94" font="vector" align="top-left">v01</text>
+<text x="421.64" y="10.16" size="2.54" layer="94" font="vector" align="top-left">v10</text>
 <text x="292.1" y="187.96" size="2.54" layer="94" font="vector" align="center">Qwiic Connector</text>
 <text x="383.54" y="274.32" size="2.54" layer="94" font="vector" align="center">USB Connector</text>
 <wire x1="259.08" y1="66.04" x2="228.6" y2="66.04" width="0.2032" layer="97" style="longdash"/>
