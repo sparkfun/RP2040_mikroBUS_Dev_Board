@@ -31251,6 +31251,9 @@ but can fall back to SPI1</text>
 <wire x1="198.12" y1="66.04" x2="198.12" y2="0" width="0.2032" layer="97" style="longdash"/>
 <text x="354.076" y="11.43" size="2.54" layer="94" font="vector">Nick Poole</text>
 <text x="331.47" y="7.366" size="2.54" layer="94" font="vector">Revised by: Priyanka Makin</text>
+<text x="241.3" y="40.64" size="1.778" layer="97" font="vector">Cut jumper
+to remove
+PWR LED.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -31711,19 +31714,19 @@ but can fall back to SPI1</text>
 <attribute name="NAME" x="196.596" y="233.68" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="199.644" y="233.68" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="R8" gate="G$1" x="243.84" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="242.316" y="20.32" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="245.364" y="20.32" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R8" gate="G$1" x="236.22" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="234.696" y="20.32" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="237.744" y="20.32" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="D3" gate="G$1" x="243.84" y="33.02" smashed="yes">
-<attribute name="NAME" x="240.411" y="28.448" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="245.745" y="28.448" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<instance part="D3" gate="G$1" x="236.22" y="33.02" smashed="yes">
+<attribute name="NAME" x="232.791" y="28.448" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="238.125" y="28.448" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="GND41" gate="1" x="243.84" y="10.16" smashed="yes">
-<attribute name="VALUE" x="243.84" y="9.906" size="1.778" layer="96" align="top-center"/>
+<instance part="GND41" gate="1" x="236.22" y="10.16" smashed="yes">
+<attribute name="VALUE" x="236.22" y="9.906" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY36" gate="G$1" x="243.84" y="50.8" smashed="yes">
-<attribute name="VALUE" x="243.84" y="53.594" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY36" gate="G$1" x="236.22" y="50.8" smashed="yes">
+<attribute name="VALUE" x="236.22" y="53.594" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="GND42" gate="1" x="386.08" y="215.9" smashed="yes">
 <attribute name="VALUE" x="386.08" y="215.646" size="1.778" layer="96" align="top-center"/>
@@ -31767,8 +31770,8 @@ but can fall back to SPI1</text>
 <instance part="GND46" gate="1" x="226.06" y="154.94" smashed="yes">
 <attribute name="VALUE" x="226.06" y="154.686" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="PWR" gate="G$1" x="243.84" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="240.792" y="43.18" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
+<instance part="PWR" gate="G$1" x="236.22" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="233.172" y="43.18" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -31912,7 +31915,7 @@ but can fall back to SPI1</text>
 <segment>
 <pinref part="PWR" gate="G$1" pin="2"/>
 <pinref part="SUPPLY36" gate="G$1" pin="3.3V"/>
-<wire x1="243.84" y1="48.26" x2="243.84" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="48.26" x2="236.22" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -32146,7 +32149,7 @@ but can fall back to SPI1</text>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="15.24" x2="243.84" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="15.24" x2="236.22" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="GND41" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -33044,7 +33047,7 @@ but can fall back to SPI1</text>
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="27.94" x2="243.84" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="27.94" x2="236.22" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!SPI0_CS!" class="0">
@@ -33063,7 +33066,7 @@ but can fall back to SPI1</text>
 <segment>
 <pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="PWR" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="35.56" x2="243.84" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="35.56" x2="236.22" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO13" class="0">

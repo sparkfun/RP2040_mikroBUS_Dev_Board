@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -41,7 +41,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
@@ -53,8 +53,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
 <layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
-<layer number="2" name="gndvert" color="10" fill="7" visible="no" active="yes"/>
-<layer number="15" name="pwrhorz" color="4" fill="7" visible="no" active="yes"/>
+<layer number="2" name="gndvert" color="10" fill="7" visible="yes" active="yes"/>
+<layer number="15" name="pwrhorz" color="4" fill="7" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -23021,8 +23021,9 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <via x="11.43" y="39.878" extent="1-16" drill="0.2" diameter="0.45"/>
 <wire x1="11.5915" y1="40.7906625" x2="11.5915" y2="40.0395" width="0.127" layer="1"/>
 <wire x1="11.5915" y1="40.0395" x2="11.43" y2="39.878" width="0.127" layer="1"/>
-<via x="6.985" y="31.75" extent="1-16" drill="0.2" diameter="0.45"/>
-<wire x1="6.985" y1="31.75" x2="5.08" y2="31.75" width="0.127" layer="1"/>
+<via x="6.985" y="32.639" extent="1-16" drill="0.2" diameter="0.45"/>
+<wire x1="6.985" y1="32.639" x2="6.096" y2="31.75" width="0.127" layer="1"/>
+<wire x1="6.096" y1="31.75" x2="5.08" y2="31.75" width="0.127" layer="1"/>
 <contactref element="J9" pad="16"/>
 <wire x1="28.133" y1="82.677" x2="25.654" y2="82.677" width="0.127" layer="1"/>
 <wire x1="25.654" y1="82.677" x2="24.892" y2="81.915" width="0.127" layer="1"/>
@@ -23031,8 +23032,8 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="7.731" y1="81.915" x2="7.858" y2="81.788" width="0.127" layer="2"/>
 <wire x1="7.858" y1="81.788" x2="7.858" y2="39.751" width="0.127" layer="2"/>
 <wire x1="7.858" y1="39.751" x2="7.685" y2="39.578" width="0.127" layer="2"/>
-<wire x1="7.685" y1="39.578" x2="7.685" y2="32.45" width="0.127" layer="2"/>
-<wire x1="7.685" y1="32.45" x2="6.985" y2="31.75" width="0.127" layer="2"/>
+<wire x1="7.685" y1="39.578" x2="7.685" y2="33.339" width="0.127" layer="2"/>
+<wire x1="7.685" y1="33.339" x2="6.985" y2="32.639" width="0.127" layer="2"/>
 <wire x1="11.43" y1="39.878" x2="11.13" y2="39.578" width="0.127" layer="15"/>
 <wire x1="11.13" y1="39.578" x2="7.685" y2="39.578" width="0.127" layer="15"/>
 <via x="7.685" y="39.578" extent="1-16" drill="0.2" diameter="0.45"/>
