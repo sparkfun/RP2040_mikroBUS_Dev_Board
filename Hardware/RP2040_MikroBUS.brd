@@ -196,7 +196,7 @@
 </layers>
 <board>
 <plain>
-<text x="33.02" y="-2.54" size="1.778" layer="47" font="vector" ratio="15">Units in inches</text>
+<text x="-2.54" y="22.86" size="1.778" layer="47" font="vector" ratio="15" rot="R90">Units in inches</text>
 <wire x1="2.54" y1="93.98" x2="27.94" y2="93.98" width="0.2032" layer="20"/>
 <wire x1="30.48" y1="91.44" x2="30.48" y2="2.54" width="0.2032" layer="20"/>
 <wire x1="27.94" y1="0" x2="2.54" y2="0" width="0.2032" layer="20"/>
@@ -205,7 +205,7 @@
 <text x="1.27" y="9.398" size="1.016" layer="16" font="vector" ratio="20" rot="MR90" align="center">v10</text>
 <dimension x1="0" y1="0" x2="2.286" y2="18.415" x3="-8.763" y3="9.2075" textsize="1.27" textratio="15" layer="47" dtype="vertical" unit="inch"/>
 <dimension x1="0" y1="0" x2="2.54" y2="2.54" x3="1.27" y3="-10.16" textsize="1.27" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="0" y1="0" x2="2.54" y2="2.54" x3="-6.35" y3="1.27" textsize="1.27" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="2.54" y2="2.54" x3="-2.54" y3="1.27" textsize="1.27" textratio="15" layer="47" dtype="vertical" unit="inch"/>
 <text x="11.049" y="19.812" size="1.27" layer="21" font="vector" ratio="15">+</text>
 <text x="12.065" y="15.24" size="1.27" layer="21" font="vector" ratio="15" rot="R90">-</text>
 <polygon width="0.254" layer="21">
@@ -222,10 +222,8 @@
 <wire x1="27.94" y1="0" x2="30.48" y2="2.54" width="0.2032" layer="20" curve="90"/>
 <wire x1="0" y1="91.44" x2="2.54" y2="93.98" width="0.2032" layer="20" curve="-90"/>
 <wire x1="30.48" y1="91.44" x2="27.94" y2="93.98" width="0.2032" layer="20" curve="90"/>
-<dimension x1="0" y1="0" x2="30.48" y2="0" x3="15.24" y3="-11.43" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="0" y1="0" x2="30.48" y2="0" x3="15.24" y3="-21.59" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="0" y1="0" x2="0" y2="93.98" x3="-15.24" y3="46.99" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<dimension x1="0" y1="0" x2="27.94" y2="0" x3="13.97" y3="-7.62" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<dimension x1="5.08" y1="24.13" x2="25.4" y2="24.13" x3="15.24" y3="-3.81" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 <text x="-5.715" y="-21.717" size="1.778" layer="51" font="vector" ratio="15">Revised by: Priyanka Makin</text>
 <text x="5.715" y="0.508" size="1.27" layer="1" font="vector" ratio="15">1</text>
 <text x="6.985" y="0.508" size="1.27" layer="2" font="vector" ratio="15">2</text>
@@ -260,6 +258,21 @@
 <wire x1="20.955" y1="67.691" x2="9.271" y2="67.691" width="0.254" layer="21"/>
 <wire x1="9.271" y1="67.691" x2="9.271" y2="65.786" width="0.254" layer="21"/>
 <wire x1="9.271" y1="65.786" x2="20.955" y2="65.786" width="0.254" layer="21"/>
+<dimension x1="1.27" y1="9.525" x2="1.27" y2="0" x3="-5.715" y3="4.7625" textsize="1.27" layer="47" unit="inch" precision="3"/>
+<dimension x1="22.86" y1="10.16" x2="22.86" y2="0" x3="34.29" y3="5.08" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="15.24" y1="3.81" x2="0" y2="3.81" x3="7.62" y3="-13.97" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="22.86" y1="10.16" x2="0" y2="10.16" x3="11.43" y3="-17.78" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="5.08" y1="49.53" x2="5.08" y2="52.07" x3="-6.35" y3="50.8" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="3.81" y1="59.69" x2="3.81" y2="88.9" x3="-2.54" y3="74.295" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="3.81" y1="60.96" x2="3.81" y2="83.82" x3="-7.62" y3="72.39" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="3.81" y1="60.96" x2="3.81" y2="93.98" x3="-11.43" y3="77.47" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="3.81" y1="83.82" x2="26.67" y2="83.82" x3="15.24" y3="96.52" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="1.27" y1="83.82" x2="29.21" y2="83.82" x3="15.24" y3="100.33" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="0" y1="91.44" x2="1.27" y2="91.44" x3="0.635" y3="104.14" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="3.81" y1="88.9" x2="3.81" y2="93.98" x3="-2.54" y3="91.44" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="26.67" y1="88.9" x2="30.48" y2="88.9" x3="28.575" y3="96.52" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="25.4" y1="13.97" x2="30.48" y2="13.97" x3="27.94" y3="-5.08" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="5.08" y1="24.13" x2="0" y2="24.13" x3="2.54" y3="-5.08" textsize="1.778" layer="47" unit="inch"/>
 </plain>
 <libraries>
 <library name="SparkFun-Resistors">
