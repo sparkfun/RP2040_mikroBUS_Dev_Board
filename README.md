@@ -1,7 +1,7 @@
 SparkFun RP2040 mikroBUS™ Development Board
 ========================================
 
-[![SparkFun RP2040 mikroBUS™ Development Board]()](https://www.sparkfun.com/products/18721)
+[![SparkFun RP2040 mikroBUS™ Development Board](https://cdn.sparkfun.com/r/400-400/assets/parts/1/8/2/7/2/18721-SparkFun_RP2040_mikroBUS_Development_Board-04.jpg)](https://www.sparkfun.com/products/18721)
 
 [*SparkFun RP2040 mikroBUS™ Development Board (DEV-18721)*](https://www.sparkfun.com/products/18721)
 
